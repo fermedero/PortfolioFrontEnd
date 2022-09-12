@@ -1,0 +1,62 @@
+.logo{
+   /* width: 10%;*/
+    height: 35px;
+   
+}
+
+.imgSeccion{
+    height: 100px;
+    width: 100px;
+}
+.texto-naranja{
+color:orange;
+
+}
+
+.texto-blanco{
+    color:white;
+    
+    }
+
+.espacio{
+    background-color:white;
+    height: 70px;
+}
+
+.fotoPerfil{
+    width: 140px; 
+    height:140px;
+
+    }
+
+
+
+    .capa2{ 
+        position:absolute;
+        z-index:1;
+       /* background-color:#FFFFFF;*/
+        top:400px;
+        left:16%;
+       /* width:300px;
+        height:0px;*/
+       }
+
+       h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        /*text-align: center;*/
+    }
+
+    .acercaDe{
+        text-align: center;
+    }
+
+    .seccion{
+        box-shadow: 0px -4px 4px rgba(255, 255, 255, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+    }
+
+   
+
