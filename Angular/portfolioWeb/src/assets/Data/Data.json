@@ -1,0 +1,39 @@
+{
+	"name": "Fernando Medero",
+	"image": "assets/img/foto.jpg",
+	"backImage": "assets/img/banner.jpg",
+	"position": "Full Stack Developer Jr",
+	"skills": "C# - vb.NET - JS - HTML - CSS - jQuery - Bootstrap - MVC - API/REST (.NET) - SCRUM - GitHub - Git - Angular - SQL - PL/SQL -MySQL - UML - JAVA - JAVA WEB - Java Spring Boot",
+	"description": "Desarrollador de software con mas de 10 años de experiencia",
+	"ubication": "Buenos Aires, Argentina",
+	"experience": [{
+			"name": "Disprofarma S.A.",
+			"img": "assets/img/dispro.jpg",
+			"position": "Full Stack Developer",
+			"time": "2014 - actualidad",
+			"task": "Analisis y desarrollo completo de software propio de la empresa."
+		},
+		{
+			"name": "Disprofarma S.A.",
+			"img": "assets/img/dispro.jpg",
+			"position": "Full Stack Developer",
+			"time": "2014 - actualidad",
+			"task": "Analisis y desarrollo completo de software propio de la empresa."
+		}
+	],
+	"education": [{
+			"name": "Universidad Blas Pascal",
+			"img": "assets/img/ubp.jpg",
+			"title": "Licenciado en Infomática",
+			"time": "2010 - 2013",
+			"obs": "Completo"
+		},
+		{
+			"name": "Argentina Programa",
+			"img": "assets/img/yoprogramo.jpg",
+			"position": "Full Stack Developer Jr",
+			"time": "Cursando",
+			"obs": "Angular"
+		}
+	]
+}
