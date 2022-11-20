@@ -1,6 +1,6 @@
 {
 	"name": "Fernando Medero",
-	"image": "assets/img/foto.jpg",
+	"image": "assets/img/foto1.jpg",
 	"backImage": "assets/img/banner.jpg",
 	"position": "Full Stack Developer Jr",
 	"skills": "C# - vb.NET - JS - HTML - CSS - jQuery - Bootstrap - MVC - API/REST (.NET) - SCRUM - GitHub - Git - Angular - SQL - PL/SQL -MySQL - UML - JAVA - JAVA WEB - Java Spring Boot",
@@ -16,9 +16,9 @@
 		{
 			"name": "Disprofarma S.A.",
 			"img": "assets/img/dispro.jpg",
-			"position": "Full Stack Developer",
-			"time": "2014 - actualidad",
-			"task": "Analisis y desarrollo completo de software propio de la empresa."
+			"position": "Soporte Tecnico",
+			"time": "2008 - 2014",
+			"task": "Mantinimiento de equipo informático."
 		}
 	],
 	"education": [{
@@ -30,10 +30,46 @@
 		},
 		{
 			"name": "Argentina Programa",
-			"img": "assets/img/yoprogramo.jpg",
-			"position": "Full Stack Developer Jr",
+			"img": "assets/img/ubp.jpg",
+			"title": "Full Stack Developer Jr",
 			"time": "Cursando",
 			"obs": "Angular"
 		}
-	]
+	],
+	"habilidades": [{
+		"name": "HTML",
+		"conocimiento": "50",
+		"color": "red"
+	},
+	{
+		"name": "PHP",
+		"conocimiento": "45",
+		"color": "blue"
+	},
+	{
+		"name": "JS",
+		"conocimiento": "60",
+		"color": "green"
+	},
+	{
+		"name": "C#",
+		"conocimiento": "90",
+		"color": "blue"
+	}
+],
+"projects": [{
+	"name": "Portfolio Personal",
+	"date": "09/2022",
+	"description": "Creación de un protfolio web personal en Angular utilizando MySQL como DB",
+	"link": "http://mundial.disprofarma.com.ar",
+	"observation": "desarrollo 100% individual"
+},
+{
+	"name": "Prode Mundial",
+	"date": "10/2022",
+	"description": "Creación de un sitio para jugar al prode con el mundial 2022 con el personal de la empresa. Registro, carga de pronosticos, vista de resultados y ranking, album de figuritas, usuario administrador para crgar los resultados y administrar funciones del sistema, etc.",
+	"link": "http://google.com",
+	"observation": "desarrollo 100% individual"
+}
+]
 }

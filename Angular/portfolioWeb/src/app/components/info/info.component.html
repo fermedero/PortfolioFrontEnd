@@ -1,5 +1,5 @@
 <div class="capa2">
-  <img [src]="miPortfolio.image" class="bd-placeholder-img rounded-circle fotoPerfil"
+  <img [src]="miPortfolio?.image" class="bd-placeholder-img rounded-circle fotoPerfil"
     preserveAspectRatio="xMidYMid slice" focusable="false" />
 </div>
 <div class="row">
@@ -9,18 +9,18 @@
   <div class="col-lg-4 col-sm-6 col-md-6 col-xs-12">
     <br>
     <h3>
-      {{miPortfolio.name}}
+      {{miPortfolio?.name}}
     </h3>
     <h5>
-      {{miPortfolio.position}}
+      {{miPortfolio?.position}}
     </h5>
   </div>
   <div class="col-lg-8 col-sm-6 col-md-6 col-xs-12">
     <h5>
-      {{miPortfolio.description}}
+      {{miPortfolio?.description}}
     </h5>
     <p class="text-center">
-      {{miPortfolio.skills}}
+      {{miPortfolio?.skills}}
     </p>
   </div>
 </div>

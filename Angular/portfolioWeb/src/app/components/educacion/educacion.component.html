@@ -1,56 +1,29 @@
 
-    
-    <!--EDUCACION-->
     <div class="row bg-primary seccion">
-        <h2 class="texto-blanco">
-          EDUCACIÓN
-        </h2>
-      </div>
+      <h2 class="texto-blanco">
+        EDUCACIÓN
+      </h2>
+  </div>
   
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-2">
-          <img class="img-responsive imgSeccion" src="assets/img/exo-logo-n.png">
-        </div>
-        <div class="col-10">
-          <h5 class="texto-naranja">PROGRAMING IN HTML5 WITH JAVASCRIPT AND CSS3 </h5>
-          <p>EXO Training Center
-            <br>2019
-          </p>
-        </div>
-      </div>
+    <div class="btn-edit">
+      <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+    </div>
   
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-2">
-          <img class="img-responsive imgSeccion" src="assets/img/utn.png">
-        </div>
-        <div class="col-10">
-          <h5 class="texto-naranja">DIPLOMATURA EN PROGRAMACIÓN JAVA</h5>
-          <p>UTN.BA Extensión Universitaria
-            <br> 10/2018 - 02/2019
-          </p>
-        </div>
+  <ul class="item-list">
+  <li *ngFor="let educacion of miEducacion">
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-md-2 col-xs-4">
+        <img class="img-responsive imgSeccion" [src]="educacion.img">
       </div>
+      <div class="col">
+        <h5 class="texto-naranja">{{educacion.title}}</h5>
+        <p>{{educacion.name}}
+          <br> {{educacion.time}}
+        </p>
+        <p>{{educacion.obs}}
+        </p>
+      </div>
+    </div>
+  </li>
+  </ul>
   
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-2">
-          <img class="img-responsive imgSeccion" src="assets/img/ubp.jpg">
-        </div>
-        <div class="col-10">
-          <h5 class="texto-naranja">LICENCIATURA EN INFORMÁTICA</h5>
-          <p>Universidad Blas Pascal
-            <br> 2010 - 2013
-          </p>
-               </div>
-      </div>
-  
-      <div class="row" style="margin-top: 10px;">
-        <div class="col-2">
-          <img class="img-responsive imgSeccion" src="assets/img/mea.jpg">
-        </div>
-        <div class="col-10">
-          <h5 class="texto-naranja">ESPECIALIZACIÓN EN EDUC. Y TIC</h5>
-          <p>Ministerio de Educación
-            <br> 2012 - 2015
-          </p>
-        </div>
-      </div>

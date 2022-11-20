@@ -1,1 +1,32 @@
-<p>proyectos works!</p>
+<div class="row bg-primary seccion">
+    <h2 class="texto-blanco">
+      PROYECTOS 
+    </h2>
+</div>
+
+  <div class="btn-edit">
+    <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+  </div>
+
+<ul class="item-list">
+<li *ngFor="let project of myProject">
+  <div class="row" style="margin-top: 10px;">
+   <!--
+<div class="col-md-2 col-xs-4">
+      <img class="img-responsive imgSeccion" [src]="project.img">
+    </div>
+   --> 
+    <div class="col">
+      <h5 class="texto-naranja">{{project.name}}</h5>
+      <p>{{project.date}}
+        <br> {{project.observation}}  </p>
+       
+        <p><a href="{{project.link}}" target="_blank">Enlace al proyecto</a></p>
+       <!--<br> <a href={{project.link}}></a>--> 
+    
+      <p>{{project.description}}
+      </p>
+    </div>
+  </div>
+</li>
+</ul>
