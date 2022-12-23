@@ -5,10 +5,31 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class DatosPortfolioService {
-  constructor(private http: HttpClient) {}
 
-  obtenerDatos(): Observable<any> { //los observable son futuros eventos y definiendolo asi el componente espera la respuesta
-    return this.http.get('assets/Data/Data.json');
+export class DatosPortfolioService {
+
+  constructor(private http: HttpClient) {}
+ 
+ getinfo(): Observable<any> {
+    return this.http.get("http://localhost:8080/readPerson");
   }
+
+  geteducacion(): Observable<any> {
+    return this.http.get("http://localhost:8080/readEduc");
+  }
+
+  getexperiencia(): Observable<any> {
+    return this.http.get("http://localhost:8080/readExp");
+  }
+
+  gethabilidades(): Observable<any> {
+    return this.http.get("http://localhost:8080/readSkill");
+  }
+
+  getproyectos(): Observable<any> {
+    return this.http.get("http://localhost:8080/readProy");
+  }
+
+ 
+  
 }

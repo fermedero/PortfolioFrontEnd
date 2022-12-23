@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 name: string = 'Login';
-color: string = '';
+color: string = 'btn btn-success';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  login(){
+  
+
+  }
 }

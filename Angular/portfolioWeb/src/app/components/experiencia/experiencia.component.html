@@ -1,28 +1,29 @@
 <div class="row bg-primary seccion">
-    <h2 class="texto-blanco">
-      EXPERIENCIA
-    </h2>
+  <button *ngIf="element == true" class="botonAdd bg-primary" type="button" ><fa-icon [icon]="faAdd" [ngStyle]="{'color':'white'}"></fa-icon> Add Experiencia</button>
+  <h2 class="texto-blanco">
+    EXPERIENCIA
+  </h2>
 </div>
 
-  <div class="btn-edit">
-    <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
-  </div>
+
 
 <ul class="item-list">
-<li *ngFor="let experiencia of miExperiencia">
-  <div class="row" style="margin-top: 10px;">
-    <div class="col-md-2 col-xs-4">
-      <img class="img-responsive imgSeccion" [src]="experiencia.img">
+  <li *ngFor="let experiencia of miExperiencia">
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-md-2 col-xs-4">
+        <img class="img-responsive imgSeccion" [src]="experiencia.img">
+      </div>
+      <div class="col">
+        <h5 class="texto-naranja">{{experiencia.position}}
+          <button *ngIf="element == true" value="{{experiencia.id}}" class="botonEdit" type="button" ><fa-icon [icon]="faPen" [ngStyle]="{'color':'blue'}"></fa-icon> </button>
+        <button *ngIf="element == true" value="{{experiencia.id}}" class="botonEdit" type="button" ><fa-icon [icon]="faTrash" [ngStyle]="{'color':'red'}"></fa-icon> </button>
+        </h5>
+        <p>{{experiencia.name}}
+          <br> {{experiencia.time}}
+        </p>
+        <p>{{experiencia.task}}
+        </p>
+      </div>
     </div>
-    <div class="col">
-      <h5 class="texto-naranja">{{experiencia.position}}</h5>
-      <p>{{experiencia.name}}
-        <br> {{experiencia.time}}
-      </p>
-      <p>{{experiencia.task}}
-      </p>
-    </div>
-  </div>
-</li>
+  </li>
 </ul>
-

@@ -1,12 +1,16 @@
 {
+	"persona":[{
 	"name": "Fernando Medero",
 	"image": "assets/img/foto1.jpg",
 	"backImage": "assets/img/banner.jpg",
 	"position": "Full Stack Developer Jr",
 	"skills": "C# - vb.NET - JS - HTML - CSS - jQuery - Bootstrap - MVC - API/REST (.NET) - SCRUM - GitHub - Git - Angular - SQL - PL/SQL -MySQL - UML - JAVA - JAVA WEB - Java Spring Boot",
 	"description": "Desarrollador de software con mas de 10 años de experiencia",
-	"ubication": "Buenos Aires, Argentina",
+	"ubication": "Buenos Aires, Argentina"
+	
+		}],
 	"experience": [{
+			"id":1,
 			"name": "Disprofarma S.A.",
 			"img": "assets/img/dispro.jpg",
 			"position": "Full Stack Developer",
@@ -14,6 +18,7 @@
 			"task": "Analisis y desarrollo completo de software propio de la empresa."
 		},
 		{
+			"id":10,
 			"name": "Disprofarma S.A.",
 			"img": "assets/img/dispro.jpg",
 			"position": "Soporte Tecnico",
@@ -22,6 +27,7 @@
 		}
 	],
 	"education": [{
+			"id":1,
 			"name": "Universidad Blas Pascal",
 			"img": "assets/img/ubp.jpg",
 			"title": "Licenciado en Infomática",
@@ -29,6 +35,7 @@
 			"obs": "Completo"
 		},
 		{
+			"id":2,
 			"name": "Argentina Programa",
 			"img": "assets/img/ubp.jpg",
 			"title": "Full Stack Developer Jr",
@@ -36,39 +43,45 @@
 			"obs": "Angular"
 		}
 	],
-	"habilidades": [{
+	"abilities": [{
+		"id":1,
 		"name": "HTML",
-		"conocimiento": "50",
-		"color": "red"
+		"skill": "80%",
+		"color": "orange"
 	},
 	{
+		"id":2,
 		"name": "PHP",
-		"conocimiento": "45",
+		"skill": "45%",
 		"color": "blue"
 	},
 	{
+		"id":3,
 		"name": "JS",
-		"conocimiento": "60",
+		"skill": "60%",
 		"color": "green"
 	},
 	{
+		"id":4,
 		"name": "C#",
-		"conocimiento": "90",
-		"color": "blue"
+		"skill": "90%",
+		"color": "black"
 	}
 ],
 "projects": [{
+	"id":1,
 	"name": "Portfolio Personal",
 	"date": "09/2022",
 	"description": "Creación de un protfolio web personal en Angular utilizando MySQL como DB",
-	"link": "http://mundial.disprofarma.com.ar",
+	"link": "http://google.com",
 	"observation": "desarrollo 100% individual"
 },
 {
+	"id":2,
 	"name": "Prode Mundial",
 	"date": "10/2022",
 	"description": "Creación de un sitio para jugar al prode con el mundial 2022 con el personal de la empresa. Registro, carga de pronosticos, vista de resultados y ranking, album de figuritas, usuario administrador para crgar los resultados y administrar funciones del sistema, etc.",
-	"link": "http://google.com",
+	"link": "http://mundial.disprofarma.com.ar",
 	"observation": "desarrollo 100% individual"
 }
 ]

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,10 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,17 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
+    LoginComponent,
+    RegisterComponent,
+    FooterComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

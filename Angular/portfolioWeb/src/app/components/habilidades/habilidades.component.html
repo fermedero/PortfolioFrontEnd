@@ -1,18 +1,35 @@
 <div class="row bg-primary seccion">
+  <button *ngIf="element == true" class="botonAdd bg-primary" type="button">
+    <fa-icon [icon]="faAdd" [ngStyle]="{'color':'white'}"></fa-icon> Add Conocimiento
+  </button>
   <h2 class="texto-blanco">
     HABILIDADES
   </h2>
 </div>
 
-<div class="btn-edit">
-  <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
-</div>
 <div class="container" style="padding-top: 20px;">
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-      <div class="skills"></div>
+      <div class="skills">
+        <ul class="item-list">
+          <li *ngFor="let habilidad of misHabilidades">
+            <h3 class="progress-title">{{habilidad.name}}
+              <button *ngIf="element == true" value="{{habilidad.id}}" class="botonEdit" type="button" ><fa-icon [icon]="faPen" [ngStyle]="{'color':'blue'}"></fa-icon> </button>
+              <button *ngIf="element == true" value="{{habilidad.id}}" class="botonEdit" type="button" ><fa-icon [icon]="faTrash" [ngStyle]="{'color':'red'}"></fa-icon> </button>
+            </h3>
+            <div class="progress orange">
+              <div class="progress-bar"
+                [ngStyle]="{'width' : habilidad.skill , 'background' : habilidad.color }">
+                <div class="progress-value">{{habilidad.skill}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="col-md-3"></div>
   </div>
 </div>
+
+
